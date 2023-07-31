@@ -93,7 +93,7 @@ yes.addEventListener("click", function() {
     startButton.innerHTML = 'START';
   }
   else if (slide == 3) {
-    minutesChosen = input2.valueAsNumber;
+    minutesChosen = input3.valueAsNumber;
     totalTimeInSeconds.value = minutesChosen*60;
     countdownContainer.innerHTML = minutesChosen < 10 ? "0" + `${minutesChosen}:00` : `${minutesChosen}:00`;
     body.style.backgroundColor = "rgb(56, 133, 138)";
