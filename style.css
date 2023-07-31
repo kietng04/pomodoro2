@@ -1,0 +1,396 @@
+.body {
+    background-color: rgb(186, 73, 73);
+    height: 2000px;
+    font-family: 'Work Sans', sans-serif;
+    transition: background-color 0.5s ease;
+}
+
+.bar .sec1 .tit {
+    color: rgb(253, 253, 253);
+}
+.bar .sec1 {
+    font-size: 25px;
+    margin-right: 80px;
+}
+.bi-patch-check-fill {
+    color: white;
+}
+
+.sec2 {
+    margin-top: -9px;
+}
+
+.sec1, .sec2, .bar{
+    display: flex;
+}
+
+.bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 530px;
+}
+
+.bar {
+    position: absolute;
+    margin-top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sec1 {
+    display: flex;
+    width: 200px;
+    align-items: center;
+
+}
+
+.space {
+    margin-left: 5px;
+}
+.b-but1, .b-but2, .b-but3 {
+    width: 75px;
+    display: flex;
+    height: 20px;
+    text-align: center;
+    
+}
+
+.bar .sec2 .b-but1, .bar .sec2  .b-but2,.bar .sec2  .b-but3 {
+    margin-top: 13px;
+    cursor: pointer;
+}
+
+.report, .setting, .login {
+    justify-content: center; 
+    cursor: pointer;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.b-but1:hover, .b-but2:hover, .b-but3:hover{
+    background-color: white;
+}
+
+.b-but1:active, .b-but2:active, .b-but3:active, .khung .se1 .a:active,.khung .se1 .b:active,.khung .se1 .c:active  {
+    transform: translateY(2px);
+}
+
+.bar::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    text-decoration: underline;
+}
+
+.khung {
+    width: 500px;
+    height: 400px;
+    position: relative;
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    top: 230px;   
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5%;
+}
+.khung .se1 {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+}
+
+.a, .b, .c {
+    display: inline-block;
+    padding: 10px 20px; 
+    background-color: rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 900;
+    font-family: ArialRounded;
+    border-radius: 9%; 
+    font-family: 'Work Sans', sans-serif;
+}
+  
+.a:hover, .b:hover, .c:hover {
+    background-color: #65d155;
+}
+.a:active, .b:active, .c:active {
+    background-color: #dff571;
+}
+
+.time {
+    font-size: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -110%);
+    color: white;
+}
+
+.quote {
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
+
+.author {
+    margin-top: -16px;
+    font-size: 10px;
+    padding-left:300px;
+    color: white;
+}
+
+.khung .start {
+    top: 50%;
+    left: 50%;
+    margin-top: 120px;
+    width:190px;
+    height: 50px;
+    font-size: 25px;
+    color: rgb(186, 73, 73);
+    border-radius: 7%;
+    border: none;
+    margin-left: 155px;
+    margin-top: 170px;
+    cursor: pointer;
+}
+
+.khung .start:hover {
+    transform: translate(-2px,-2px);
+}
+
+.khung .start:active {
+    transform: translate(4px,4px);
+}
+
+.task {
+    position: relative;
+    color: white;
+    width: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 65px;
+}
+
+.task::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    bottom: -2px;   
+}
+
+.addtask {
+    position: relative;
+    color: white;
+    width: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 65px;
+    border: 2px dashed rgba(255, 255, 255, 0.4);
+   background-color: rgba(0, 0, 0, 0.1);
+   cursor: pointer;
+   border-radius: 5%;
+   width: 500px;
+   height: 60px;
+   text-align: center;
+   opacity: 0.8;
+   color:#b5b5b6;
+}
+
+.addtask .bi-patch-plus-fill {
+    margin-right: 5px;
+    padding-top: 20px;
+}
+
+.addtask:hover {
+    color: white;
+}
+
+.settingframe {
+    position: absolute;
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height:300px;
+    background-color: white;
+    margin-top: -380px;;
+    border-radius: 2%;
+    display: none;
+}
+
+.settingframe .title {
+    padding-left: 20px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.settingframe::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(102, 102, 102);
+    margin-top: 40px;   
+}
+
+.settingframe .bi-x-lg {
+    margin-left: 300px;
+}
+
+.settingframe .bi-x-lg {
+    margin-left: 300px;
+}
+
+.settingframe, .title {
+    font-weight: bold;
+    color: rgb(102, 102, 102);
+}
+
+.tit1 {
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.settingframe .tit1::before {
+    content: "•";
+    margin-right: 5px;
+}
+
+.settingframe .pm {
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 25px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding-left: 30px; 
+    flex-grow: 1;
+}
+
+.change1, .change2,.change3 {
+    width: 70%;
+}
+
+.tb {
+
+    border: 2px solid black;
+    height: 120px;
+    width: 500px;
+    position: relative;
+    left: 50%;  
+    transform: translate(-50%, -290%);  
+    background-color: rgb(255, 255, 255); 
+    display: none;
+}
+
+.tb::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 89px;
+    left: 0;
+    width: 99.5%;
+    height: 1px;
+    background-color: rgb(123, 123, 123);
+    border: 2px dashed black;
+}
+
+.tb .ans {
+    margin-left: 400px;
+    width: 80px;    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; 
+} 
+
+.tb .ans .yess, .tb .ans .no {
+    width: 30px;
+    background-color: rgba(71, 67, 67, 0.2);
+}
+
+.tb .alertcomment, .tb .alert {
+    padding-top: 8px;
+}
+
+.tb .alert {
+
+    background-color: rgba(45, 44, 44, 0.4);
+}
+
+.task1 {
+    width: 500px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80px;;
+    background-color: white;
+    margin-top: -160px;
+    display: none;
+}
+.task1 .newtask {
+    font-weight: bold;
+    color: rgb(102, 102, 102);  
+    text-decoration: underline;
+}
+.task1 .newtaskdetail {
+    margin-top: -1px;
+    width: 98.5%;    
+    height: 30%;
+    border: none;
+}
+
+.task1 .newtaskdetail:focus {
+    outline: none;
+}
+
+.task1 .option {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+    height: 50px;
+    margin-left: 98%;
+    transform: translateX(-100%);
+}
+
+.task1 .option .yes {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+}
+
+.task1 .option .yes .save {
+    vertical-align: middle;
+}
+
+.task1 .option .no1 {
+    color: rgb(185, 183, 183);
+    width: 50%;
+    height: 50%;
+    text-align: center;
+}
+
+.task1 .option .no1 .cancel {
+    vertical-align: middle;
+}
+
+
+
